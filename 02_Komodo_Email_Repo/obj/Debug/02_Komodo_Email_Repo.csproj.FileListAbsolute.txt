@@ -1,0 +1,6 @@
+C:\Users\daves\Documents\ElevenFiftyProjects\Gold Badge Challenge\Gold Badge Challenge\02_Komodo_Email_Repo\bin\Debug\02_Komodo_Email_Repo.dll
+C:\Users\daves\Documents\ElevenFiftyProjects\Gold Badge Challenge\Gold Badge Challenge\02_Komodo_Email_Repo\bin\Debug\02_Komodo_Email_Repo.pdb
+C:\Users\daves\Documents\ElevenFiftyProjects\Gold Badge Challenge\Gold Badge Challenge\02_Komodo_Email_Repo\obj\Debug\02_Komodo_Email_Repo.csprojAssemblyReference.cache
+C:\Users\daves\Documents\ElevenFiftyProjects\Gold Badge Challenge\Gold Badge Challenge\02_Komodo_Email_Repo\obj\Debug\02_Komodo_Email_Repo.csproj.CoreCompileInputs.cache
+C:\Users\daves\Documents\ElevenFiftyProjects\Gold Badge Challenge\Gold Badge Challenge\02_Komodo_Email_Repo\obj\Debug\02_Komodo_Email_Repo.dll
+C:\Users\daves\Documents\ElevenFiftyProjects\Gold Badge Challenge\Gold Badge Challenge\02_Komodo_Email_Repo\obj\Debug\02_Komodo_Email_Repo.pdb
