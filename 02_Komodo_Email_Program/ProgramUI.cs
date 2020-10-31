@@ -12,6 +12,7 @@ namespace _02_Komodo_Email_Program
     public class ProgramUI
     {
         private List<Recipient> _repo = new List<Recipient>();
+        private List<Message> _message = new List<Message>();
 
         public void Intro()
         {
@@ -22,6 +23,7 @@ namespace _02_Komodo_Email_Program
             Console.WindowHeight = 35;
 
             SeedRecipients();
+            SetMessaging();
 
             MessageBar("KOMODO EMAIL CAMPAIGN", "=", " ", 60);
 
@@ -218,13 +220,7 @@ namespace _02_Komodo_Email_Program
             Menu();
         }
 
-
-
-
-
-
-
-
+       
 
         public void SeedRecipients()
         {
@@ -237,10 +233,22 @@ namespace _02_Komodo_Email_Program
             _repo.Add(newrecipient2);
             _repo.Add(newrecipient3);
             _repo.Add(newrecipient4);
+        }
+
+
+        public void SetMessaging()
+        {
+            Message newmessage1 = new Message("Thank you for your business!", "Thank you for your work with us.We appreciate your loyalty.Here's a coupon.");
+            Message newmessage2 = new Message("We've missed you!", "It's been a long time since we've heard from you, we want you back.");
+            Message newmessage3 = new Message("We've got a deal for you!", "We currently have the lowest rates on Helicopter Insurance!");
+
+            _message.Add(newmessage1);
+            _message.Add(newmessage2);
+            _message.Add(newmessage3);
+
 
 
         }
-
 
 
 

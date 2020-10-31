@@ -1,0 +1,6 @@
+C:\Users\daves\Documents\ElevenFiftyProjects\Gold Badge Challenge\Gold Badge Challenge\00_Helpful_Methods\bin\Debug\00_Helpful_Methods.dll
+C:\Users\daves\Documents\ElevenFiftyProjects\Gold Badge Challenge\Gold Badge Challenge\00_Helpful_Methods\bin\Debug\00_Helpful_Methods.pdb
+C:\Users\daves\Documents\ElevenFiftyProjects\Gold Badge Challenge\Gold Badge Challenge\00_Helpful_Methods\obj\Debug\00_Helpful_Methods.csprojAssemblyReference.cache
+C:\Users\daves\Documents\ElevenFiftyProjects\Gold Badge Challenge\Gold Badge Challenge\00_Helpful_Methods\obj\Debug\00_Helpful_Methods.csproj.CoreCompileInputs.cache
+C:\Users\daves\Documents\ElevenFiftyProjects\Gold Badge Challenge\Gold Badge Challenge\00_Helpful_Methods\obj\Debug\00_Helpful_Methods.dll
+C:\Users\daves\Documents\ElevenFiftyProjects\Gold Badge Challenge\Gold Badge Challenge\00_Helpful_Methods\obj\Debug\00_Helpful_Methods.pdb

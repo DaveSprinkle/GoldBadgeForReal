@@ -12,6 +12,8 @@ namespace _02_Komodo_Email_Repo
     {
         List<Recipient> _recipients = new List<Recipient>();
 
+        List<Message> _message = new List<Message>();
+
         public bool AddRecipientToList(Recipient recipient)
         {
             int startingCount = _recipients.Count;
@@ -38,22 +40,22 @@ namespace _02_Komodo_Email_Repo
             return null;
         }
 
-        //public bool UpdateExistingRecipient(string originalRecipient, Recipient newRecipient)
-        //{
-        //    Recipient recipient = GetRecipientByLastName(originalRecipient);
+        public bool UpdateExistingRecipient(string originalRecipient, Recipient newRecipient)
+        {
+            Recipient recipient = GetRecipientByLastName(originalRecipient);
 
-        //    if (recipient != null)
-        //    {
-        //        recipient.FirstName = newRecipient.FirstName;
-        //        recipient.LastName = newRecipient.FirstName;
-        //        recipient.Type = newRecipient.Type;
-        //        recipient.Email = newRecipient.Email;
-        //        recipient.Message = newRecipient.Message;
+            if (recipient != null)
+            {
+                recipient.FirstName = newRecipient.FirstName;
+                recipient.LastName = newRecipient.FirstName;
+                recipient.Type = newRecipient.Type;
+                recipient.Email = newRecipient.Email;
+                //recipient.Message = newRecipient.Message;
                 
-        //        return true;
-        //    }
-        //    else { return false; }
-        //}
+                return true;
+            }
+            else { return false; }
+        }
 
 
         public bool DeleteRecipient(Recipient recipient)

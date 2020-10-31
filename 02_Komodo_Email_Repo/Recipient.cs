@@ -12,7 +12,7 @@ namespace _02_Komodo_Email_Repo
         public string LastName { get; set; }
         public int Type { get; set; }
         public string Email { get; set; }
-        public string Message { get; }
+        public string Message { get; set; }
 
         public Recipient() { }
 

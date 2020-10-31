@@ -1,0 +1,12 @@
+C:\Users\daves\Documents\ElevenFiftyProjects\Gold Badge Challenge\Gold Badge Challenge\03_Komodo_Cafe\bin\Debug\03_Komodo_Cafe.exe.config
+C:\Users\daves\Documents\ElevenFiftyProjects\Gold Badge Challenge\Gold Badge Challenge\03_Komodo_Cafe\bin\Debug\03_Komodo_Cafe.exe
+C:\Users\daves\Documents\ElevenFiftyProjects\Gold Badge Challenge\Gold Badge Challenge\03_Komodo_Cafe\bin\Debug\03_Komodo_Cafe.pdb
+C:\Users\daves\Documents\ElevenFiftyProjects\Gold Badge Challenge\Gold Badge Challenge\03_Komodo_Cafe\bin\Debug\03_Komodo_Cafe_Repo.dll
+C:\Users\daves\Documents\ElevenFiftyProjects\Gold Badge Challenge\Gold Badge Challenge\03_Komodo_Cafe\bin\Debug\03_Komodo_Cafe_Repo.pdb
+C:\Users\daves\Documents\ElevenFiftyProjects\Gold Badge Challenge\Gold Badge Challenge\03_Komodo_Cafe\obj\Debug\03_Komodo_Cafe.csprojAssemblyReference.cache
+C:\Users\daves\Documents\ElevenFiftyProjects\Gold Badge Challenge\Gold Badge Challenge\03_Komodo_Cafe\obj\Debug\03_Komodo_Cafe.csproj.CoreCompileInputs.cache
+C:\Users\daves\Documents\ElevenFiftyProjects\Gold Badge Challenge\Gold Badge Challenge\03_Komodo_Cafe\obj\Debug\03_Komodo_Cafe.csproj.CopyComplete
+C:\Users\daves\Documents\ElevenFiftyProjects\Gold Badge Challenge\Gold Badge Challenge\03_Komodo_Cafe\obj\Debug\03_Komodo_Cafe.exe
+C:\Users\daves\Documents\ElevenFiftyProjects\Gold Badge Challenge\Gold Badge Challenge\03_Komodo_Cafe\obj\Debug\03_Komodo_Cafe.pdb
+C:\Users\daves\Documents\ElevenFiftyProjects\Gold Badge Challenge\Gold Badge Challenge\03_Komodo_Cafe\bin\Debug\00_Helpful_Methods.dll
+C:\Users\daves\Documents\ElevenFiftyProjects\Gold Badge Challenge\Gold Badge Challenge\03_Komodo_Cafe\bin\Debug\00_Helpful_Methods.pdb
