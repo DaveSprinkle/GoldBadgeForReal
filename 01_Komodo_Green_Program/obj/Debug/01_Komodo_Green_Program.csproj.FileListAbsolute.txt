@@ -8,3 +8,5 @@ C:\Users\daves\Documents\ElevenFiftyProjects\Gold Badge Challenge\Gold Badge Cha
 C:\Users\daves\Documents\ElevenFiftyProjects\Gold Badge Challenge\Gold Badge Challenge\01_Komodo_Green_Program\obj\Debug\01_Komodo_Green_Program.csproj.CopyComplete
 C:\Users\daves\Documents\ElevenFiftyProjects\Gold Badge Challenge\Gold Badge Challenge\01_Komodo_Green_Program\obj\Debug\01_Komodo_Green_Program.exe
 C:\Users\daves\Documents\ElevenFiftyProjects\Gold Badge Challenge\Gold Badge Challenge\01_Komodo_Green_Program\obj\Debug\01_Komodo_Green_Program.pdb
+C:\Users\daves\Documents\ElevenFiftyProjects\Gold Badge Challenge\Gold Badge Challenge\01_Komodo_Green_Program\bin\Debug\00_Helpful_Methods.dll
+C:\Users\daves\Documents\ElevenFiftyProjects\Gold Badge Challenge\Gold Badge Challenge\01_Komodo_Green_Program\bin\Debug\00_Helpful_Methods.pdb

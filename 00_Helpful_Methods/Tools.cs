@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -219,8 +220,17 @@ namespace _00_Helpful_Methods
         }
 
 
+        public string StringTruncate(string content, int maxwide)
+        {
+            if (content.Length > maxwide-3)
+            {
+                return content.Substring(0, maxwide - 3) + "...";
+            }
+            else { return content; }
 
 
+
+        }
 
 
     }

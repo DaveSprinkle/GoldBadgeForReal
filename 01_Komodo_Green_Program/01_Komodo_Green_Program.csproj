@@ -51,6 +51,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\00_Helpful_Methods\00_Helpful_Methods.csproj">
+      <Project>{EACDD7E8-8D68-4E7F-AEDC-55224B1ED00D}</Project>
+      <Name>00_Helpful_Methods</Name>
+    </ProjectReference>
     <ProjectReference Include="..\01_Komodo_Repo\01_Komodo_Repo.csproj">
       <Project>{A50EE11F-16AC-4369-849E-95FA8F8A4E94}</Project>
       <Name>01_Komodo_Repo</Name>
