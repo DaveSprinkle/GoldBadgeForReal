@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_Komodo_Cafe_Repo", "03_K
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "00_Helpful_Methods", "00_Helpful_Methods\00_Helpful_Methods.csproj", "{EACDD7E8-8D68-4E7F-AEDC-55224B1ED00D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_Komodo_Green_Testing", "01_Komodo_Green_Testing\01_Komodo_Green_Testing.csproj", "{6DDD1901-6167-4032-8C19-287A305DA34C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{EACDD7E8-8D68-4E7F-AEDC-55224B1ED00D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EACDD7E8-8D68-4E7F-AEDC-55224B1ED00D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EACDD7E8-8D68-4E7F-AEDC-55224B1ED00D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DDD1901-6167-4032-8C19-287A305DA34C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DDD1901-6167-4032-8C19-287A305DA34C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DDD1901-6167-4032-8C19-287A305DA34C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DDD1901-6167-4032-8C19-287A305DA34C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
