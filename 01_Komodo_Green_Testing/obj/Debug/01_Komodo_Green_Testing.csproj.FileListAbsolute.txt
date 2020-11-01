@@ -1,0 +1,16 @@
+C:\Users\daves\Documents\ElevenFiftyProjects\Gold Badge Challenge\Gold Badge Challenge\01_Komodo_Green_Testing\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\daves\Documents\ElevenFiftyProjects\Gold Badge Challenge\Gold Badge Challenge\01_Komodo_Green_Testing\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\daves\Documents\ElevenFiftyProjects\Gold Badge Challenge\Gold Badge Challenge\01_Komodo_Green_Testing\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\daves\Documents\ElevenFiftyProjects\Gold Badge Challenge\Gold Badge Challenge\01_Komodo_Green_Testing\bin\Debug\01_Komodo_Green_Testing.dll
+C:\Users\daves\Documents\ElevenFiftyProjects\Gold Badge Challenge\Gold Badge Challenge\01_Komodo_Green_Testing\bin\Debug\01_Komodo_Green_Testing.pdb
+C:\Users\daves\Documents\ElevenFiftyProjects\Gold Badge Challenge\Gold Badge Challenge\01_Komodo_Green_Testing\bin\Debug\01_Komodo_Repo.dll
+C:\Users\daves\Documents\ElevenFiftyProjects\Gold Badge Challenge\Gold Badge Challenge\01_Komodo_Green_Testing\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\daves\Documents\ElevenFiftyProjects\Gold Badge Challenge\Gold Badge Challenge\01_Komodo_Green_Testing\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\daves\Documents\ElevenFiftyProjects\Gold Badge Challenge\Gold Badge Challenge\01_Komodo_Green_Testing\bin\Debug\01_Komodo_Repo.pdb
+C:\Users\daves\Documents\ElevenFiftyProjects\Gold Badge Challenge\Gold Badge Challenge\01_Komodo_Green_Testing\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\daves\Documents\ElevenFiftyProjects\Gold Badge Challenge\Gold Badge Challenge\01_Komodo_Green_Testing\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\daves\Documents\ElevenFiftyProjects\Gold Badge Challenge\Gold Badge Challenge\01_Komodo_Green_Testing\obj\Debug\01_Komodo_Green_Testing.csprojAssemblyReference.cache
+C:\Users\daves\Documents\ElevenFiftyProjects\Gold Badge Challenge\Gold Badge Challenge\01_Komodo_Green_Testing\obj\Debug\01_Komodo_Green_Testing.csproj.CoreCompileInputs.cache
+C:\Users\daves\Documents\ElevenFiftyProjects\Gold Badge Challenge\Gold Badge Challenge\01_Komodo_Green_Testing\obj\Debug\01_Komodo_Green_Testing.csproj.CopyComplete
+C:\Users\daves\Documents\ElevenFiftyProjects\Gold Badge Challenge\Gold Badge Challenge\01_Komodo_Green_Testing\obj\Debug\01_Komodo_Green_Testing.dll
+C:\Users\daves\Documents\ElevenFiftyProjects\Gold Badge Challenge\Gold Badge Challenge\01_Komodo_Green_Testing\obj\Debug\01_Komodo_Green_Testing.pdb
