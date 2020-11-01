@@ -203,6 +203,12 @@ namespace _00_Helpful_Methods
             Console.Write(stringNum.PadRight(padding));
         }
 
+        public void PadDecimal(decimal info, int padding)
+        {
+            string stringNum = info.ToString();
+            Console.Write(stringNum.PadRight(padding));
+        }
+
 
         //***Writes a menu number and line***//
         public void MenuLine(int number, string activity)
