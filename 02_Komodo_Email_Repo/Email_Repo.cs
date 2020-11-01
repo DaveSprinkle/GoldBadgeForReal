@@ -23,7 +23,7 @@ namespace _02_Komodo_Email_Repo
             return wasAdded;
         }
 
-        public List<Recipient> GetVehicles()
+        public List<Recipient> GetRecipients()
         {
             return _recipients;
         }

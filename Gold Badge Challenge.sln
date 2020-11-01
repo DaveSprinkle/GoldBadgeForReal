@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "00_Helpful_Methods", "00_He
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_Komodo_Green_Testing", "01_Komodo_Green_Testing\01_Komodo_Green_Testing.csproj", "{6DDD1901-6167-4032-8C19-287A305DA34C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_Komodo_Email_Testing", "02_Komodo_Email_Testing\02_Komodo_Email_Testing.csproj", "{C84278A5-B730-4567-9444-0C21695A8D33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_Komodo_Cafe_Testing", "Komodo_Cafe_Testing\03_Komodo_Cafe_Testing.csproj", "{4FD0BDD1-131D-4E6E-8775-64AE0E165F96}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +61,14 @@ Global
 		{6DDD1901-6167-4032-8C19-287A305DA34C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6DDD1901-6167-4032-8C19-287A305DA34C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6DDD1901-6167-4032-8C19-287A305DA34C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C84278A5-B730-4567-9444-0C21695A8D33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C84278A5-B730-4567-9444-0C21695A8D33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C84278A5-B730-4567-9444-0C21695A8D33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C84278A5-B730-4567-9444-0C21695A8D33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FD0BDD1-131D-4E6E-8775-64AE0E165F96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FD0BDD1-131D-4E6E-8775-64AE0E165F96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FD0BDD1-131D-4E6E-8775-64AE0E165F96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FD0BDD1-131D-4E6E-8775-64AE0E165F96}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
