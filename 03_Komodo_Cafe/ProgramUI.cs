@@ -13,8 +13,8 @@ namespace _03_Komodo_Cafe
     {
         private List<KMenuItem> _repo = new List<KMenuItem>();
 
-        Tools tool = new Tools();    
-        
+        Tools tool = new Tools();
+
         public void Intro()
         {
             Console.WindowWidth = 150;
@@ -92,18 +92,18 @@ namespace _03_Komodo_Cafe
             tool.PadString("Name", pad);
             tool.PadString("Description", pad * 3);
             tool.PadString("Ingredients", pad * 3);
-            tool.PadString("Price", pad/2);
+            tool.PadString("Price", pad / 2);
             Console.WriteLine();
             tool.RowDivider("=", (pad * cols));
 
             foreach (KMenuItem menuitem in _repo)
             {
-                tool.PadString(menuitem.MealNumber.ToString(), pad/4);
+                tool.PadString(menuitem.MealNumber.ToString(), pad / 2);
                 tool.PadString(menuitem.MealName, pad);
                 tool.PadString(menuitem.MealDescription, pad * 3);
                 tool.PadString(menuitem.MealIngredients, pad * 3);
                 tool.PadString(menuitem.MealPrice.ToString(), pad / 2);
-                
+
                 Console.WriteLine();
                 tool.RowDivider("-", (pad * cols));
             }
@@ -124,10 +124,13 @@ namespace _03_Komodo_Cafe
             int cols = 8;
             Console.Clear();
 
+            Console.WriteLine("Please enter the menu item you want to see:");
+            Console.WriteLine();
+
             PullMenuItemFromList();
 
-                int selected = tool.GetIntResponse("");
-                KMenuItem item = _repo[selected - 1];
+            int selected = tool.GetIntResponse("");
+            KMenuItem item = _repo[selected - 1];
 
             if (selected == 0)
             {
@@ -136,6 +139,7 @@ namespace _03_Komodo_Cafe
             }
             else
             {
+                Console.Clear();
                 tool.MessageBar(item.MealName + " ", "=", " ", pad * cols);
                 tool.PadString("#", pad / 2);
                 tool.PadString("Name", pad);
@@ -145,11 +149,11 @@ namespace _03_Komodo_Cafe
                 Console.WriteLine();
                 tool.RowDivider("=", (pad * cols));
 
-                tool.PadInt(item.MealNumber, pad/2);
+                tool.PadInt(item.MealNumber, pad / 2);
                 tool.PadString(item.MealName, pad);
-                tool.PadString(item.MealDescription, pad*3);
-                tool.PadString(item.MealIngredients, pad*3);
-                tool.PadDecimal(item.MealPrice, pad/2);
+                tool.PadString(item.MealDescription, pad * 3);
+                tool.PadString(item.MealIngredients, pad * 3);
+                tool.PadDecimal(item.MealPrice, pad / 2);
                 Console.WriteLine();
                 tool.RowDivider("-", pad * cols);
             }
@@ -181,26 +185,38 @@ namespace _03_Komodo_Cafe
         {
             KMenuItem newItem = new KMenuItem();
 
-            newItem.MealNumber = _repo.Count + 1;
-            newItem.MealName = tool.GetStringResponse("Enter the Name of the new Item:");
-            newItem.MealDescription = tool.GetStringResponse("Enter the Decription of the new Item:");
-            newItem.MealIngredients = tool.GetStringResponse("Enter the Ingredients of the new Item:");
-            newItem.MealPrice = tool.GetDecimalResponse("Enter the Price of the new Item:");
-
-            _repo.Add(newItem);
-
-            tool.WriteColors("Your new item was entered.", "Green");
+            Console.Clear();
+            tool.MessageBar("ENTER A NEW ITEM", "=", " ", 100);
 
             Console.WriteLine();
 
-            Menu();
+
+            newItem.MealNumber = _repo.Count + 1;
+            newItem.MealName = tool.GetStringResponse("Enter the Name of the new Item:");
+            Console.WriteLine();
+            newItem.MealDescription = tool.GetStringResponse("Enter the Decription of the new Item:");
+            Console.WriteLine();
+            newItem.MealIngredients = tool.GetStringResponse("Enter the Ingredients of the new Item:");
+            Console.WriteLine();
+            newItem.MealPrice = tool.GetDecimalResponse("Enter the Price of the new Item:");
+            Console.WriteLine();
+
+            _repo.Add(newItem);
+
+            tool.WriteColors("Your new item was entered and is meal number " + newItem.MealNumber + ".", "Green");
+
+            Console.WriteLine("Press any key to see your item in the menu:");
+            ViewAllMenuItems();
         }
 
 
         private void UpdateExistingMenuItem()
         {
+            Console.Clear();
+            Console.WriteLine("Please enter which item you want to update:");
+            Console.WriteLine();
             PullMenuItemFromList();
-            int selection = tool.GetIntResponse("Please enter which item you want to update:");
+            int selection = tool.GetIntResponse("");
 
             Console.Clear();
 
@@ -213,7 +229,7 @@ namespace _03_Komodo_Cafe
             }
 
             KMenuItem item = new KMenuItem(
-                oldItem.MealNumber, 
+                oldItem.MealNumber,
                 oldItem.MealName,
                 oldItem.MealDescription,
                 oldItem.MealIngredients,
@@ -221,32 +237,34 @@ namespace _03_Komodo_Cafe
                 );
 
             Console.WriteLine("Which property would you like to update:");
-
+            Console.WriteLine();
             tool.MenuLine(1, "Item Name");
             tool.MenuLine(2, "Item Descriptioin");
             tool.MenuLine(3, "Item Ingredients");
             tool.MenuLine(4, "Item Price");
-            
+
             int propUpdate = tool.GetIntResponse("");
 
             switch (propUpdate)
             {
                 case 1:
-                    oldItem.MealName = tool.GetStringResponse("Enter new Type");
+                    oldItem.MealName = tool.GetStringResponse("Enter new Name");
                     break;
                 case 2:
-                    oldItem.MealDescription = tool.GetStringResponse("Enter new Make");
+                    oldItem.MealDescription = tool.GetStringResponse("Enter new Description");
                     break;
                 case 3:
-                    oldItem.MealIngredients = tool.GetStringResponse("Enter new Model");
+                    oldItem.MealIngredients = tool.GetStringResponse("Enter new Ingredients");
                     break;
                 case 4:
-                    oldItem.MealPrice = tool.GetIntResponse("Enter new Year");
+                    oldItem.MealPrice = tool.GetIntResponse("Enter new Price");
                     break;
                 default:
                     break;
             }
-            Menu();
+            tool.WriteColors(oldItem.MealName + " updated.", 2);
+            tool.KeyForward();
+            ViewAllMenuItems();
         }
 
 
@@ -264,11 +282,11 @@ namespace _03_Komodo_Cafe
 
             bool validSelection = false;
 
-            while(validSelection == false)
+            while (validSelection == false)
             {
                 int selection = tool.GetIntResponse("");
-                
-                if (selection == 0 || selection + 1 > _repo.Count)
+
+                if (selection == 0 || selection > _repo.Count + 1)
                 {
                     tool.WriteColors("Please make a valid selection.", 1);
                 }
@@ -279,16 +297,17 @@ namespace _03_Komodo_Cafe
                 }
             }
 
+            Console.WriteLine();
             tool.WriteColors("Item deleted.", "Red");
 
             tool.KeyForward();
-            Menu();
+            ViewAllMenuItems();
         }
 
         public void PullMenuItemFromList()
         {
             int i = 1;
-            foreach(KMenuItem menuitem in _repo)
+            foreach (KMenuItem menuitem in _repo)
             {
                 tool.MenuLine(i, menuitem.MealName);
                 i++;
