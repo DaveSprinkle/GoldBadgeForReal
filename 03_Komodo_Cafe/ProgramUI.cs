@@ -26,7 +26,6 @@ namespace _03_Komodo_Cafe
 
             Menu();
 
-            tool.KeyForward();
         }
 
 
@@ -69,11 +68,11 @@ namespace _03_Komodo_Cafe
                         validEntry = true;
                         break;
                     case 6:
+                        Console.WriteLine("Exit key pushed...");
                         validEntry = true;
                         break;
                     default:
                         tool.WriteColors("Please make a valid entry.", "Red");
-
                         validEntry = false;
                         break;
                 }
@@ -262,6 +261,7 @@ namespace _03_Komodo_Cafe
                 default:
                     break;
             }
+            Console.WriteLine();
             tool.WriteColors(oldItem.MealName + " updated.", 2);
             tool.KeyForward();
             ViewAllMenuItems();
