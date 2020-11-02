@@ -45,7 +45,7 @@ namespace _02_Komodo_Email_Testing
         {
             //Arrange
             Email_Repo repo = new Email_Repo();
-            Recipient newRecipient = new Recipient("David","Sprinkle",1,"dave@mail.com","Howdy.");
+            Recipient newRecipient = new Recipient("David","Sprinkle",1,"dave@mail.com");
             repo.AddRecipientToList(newRecipient);
             string last = "Sprinkle";
 
@@ -60,10 +60,10 @@ namespace _02_Komodo_Email_Testing
         {
             //Arrange
             Email_Repo repo = new Email_Repo();
-            Recipient oldRecipient = new Recipient("David", "Sprinkle", 1, "dave@mail.com", "Howdy.");
+            Recipient oldRecipient = new Recipient("David", "Sprinkle", 1, "dave@mail.com");
             repo.AddRecipientToList(oldRecipient);
 
-            Recipient newRecipient = new Recipient("Cecil", "Sprinkle", 1, "cecil@mail.com", "Howdy.");
+            Recipient newRecipient = new Recipient("Cecil", "Sprinkle", 1, "cecil@mail.com");
 
             //Act
             bool updateResult = repo.UpdateExistingRecipient(oldRecipient.LastName, newRecipient);
@@ -77,7 +77,7 @@ namespace _02_Komodo_Email_Testing
         {
             //Arrange
             Email_Repo repo = new Email_Repo();
-            Recipient newRecipient = new Recipient("David", "Sprinkle", 1, "dave@mail.com", "Howdy.");
+            Recipient newRecipient = new Recipient("David", "Sprinkle", 1, "dave@mail.com");
             repo.AddRecipientToList(newRecipient);
             string lastname = "Sprinkle";
 

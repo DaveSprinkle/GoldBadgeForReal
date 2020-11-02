@@ -49,7 +49,7 @@ namespace _02_Komodo_Email_Repo
                 recipient.FirstName = newRecipient.FirstName;
                 recipient.LastName = newRecipient.FirstName;
                 recipient.Type = newRecipient.Type;
-                recipient.Email = newRecipient.Email;
+                recipient.EmailAddress = newRecipient.EmailAddress;
                 //recipient.Message = newRecipient.Message;
                 
                 return true;

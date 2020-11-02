@@ -15,7 +15,6 @@ namespace _02_Komodo_Email_Program
         private List<Recipient> _repo = new List<Recipient>();
         Tools tool = new Tools();
 
-
         private List<Message> _message = new List<Message>();
 
         public void Intro()
@@ -24,13 +23,11 @@ namespace _02_Komodo_Email_Program
             Console.WindowHeight = 35;
 
             SeedRecipients();
-            SetMessaging();
+            SeedMessaging();
 
             tool.MessageBar("KOMODO EMAIL CAMPAIGN", "=", " ", 60);
 
             Menu();
-            
-            tool.KeyForward();
         }
 
 
@@ -42,12 +39,12 @@ namespace _02_Komodo_Email_Program
             tool.MenuLine(4, "Update Recipients");
             tool.MenuLine(5, "Delete Recipients");
             tool.MenuLine(6, "Exit");
-            
+
             int menuResponse;
 
             bool validEntry = false;
 
-            while(validEntry == false)
+            while (validEntry == false)
             {
                 menuResponse = tool.GetIntResponse("");
                 switch (menuResponse)
@@ -56,7 +53,6 @@ namespace _02_Komodo_Email_Program
                         ViewAllRecipients();
                         validEntry = true;
                         break;
-
                     case 2:
                         ViewRecipientByType(1);
                         validEntry = true;
@@ -77,7 +73,7 @@ namespace _02_Komodo_Email_Program
                         break;
                     default:
                         tool.WriteColors("Please make a valid entry.", "Red");
-                        
+
                         validEntry = false;
                         break;
                 }
@@ -92,21 +88,22 @@ namespace _02_Komodo_Email_Program
             Console.Clear();
             tool.MessageBar("ALL RECIPIENTS", "=", " ", (pad * cols) + pad);
 
-            tool.PadString("First Name", pad/2);
-            tool.PadString("Last Name", pad/2);
-            tool.PadString("Type", pad/2);
+            tool.PadString("First Name", pad / 2);
+            tool.PadString("Last Name", pad / 2);
+            tool.PadString("Type", pad / 2);
             tool.PadString("Email Address", pad);
-            tool.PadString("Message", pad*2);
+            tool.PadString("Message", pad * 2);
             Console.WriteLine();
-            tool.RowDivider("=", (pad * cols)+pad);
+            tool.RowDivider("=", (pad * cols) + pad);
 
             foreach (Recipient recipient in _repo)
             {
-                tool.PadString(recipient.FirstName, pad/2);
-                tool.PadString(recipient.LastName, pad/2);
-                tool.PadString(GetRecipientType(recipient.Type), pad/2);
-                tool.PadString(recipient.Email, pad);
-                tool.PadString(recipient.Message, pad* 2);
+                tool.PadString(recipient.FirstName, pad / 2);
+                tool.PadString(recipient.LastName, pad / 2);
+                tool.PadString(GetRecipientType(recipient.Type), pad / 2);
+                tool.PadString(recipient.EmailAddress, pad);
+                tool.PadString(GetSubjectLine(recipient.Type), pad * 2);
+                tool.PadString(GetMessageLine(recipient.Type), pad * 2);
                 Console.WriteLine();
                 tool.RowDivider("-", (pad * cols) + pad);
             }
@@ -137,19 +134,19 @@ namespace _02_Komodo_Email_Program
 
             foreach (Recipient recipient in _repo)
             {
-                if(recipient.Type == rectype)
+                if (recipient.Type == rectype)
                 {
                     tool.PadString(recipient.FirstName, pad / 2);
                     tool.PadString(recipient.LastName, pad / 2);
                     tool.PadString(GetRecipientType(recipient.Type), pad / 2);
-                    tool.PadString(recipient.Email, pad);
-                    tool.PadString(recipient.Message, pad * 2);
+                    tool.PadString(recipient.EmailAddress, pad);
+                    tool.PadString(GetSubjectLine(recipient.Type), pad * 2);
+                    tool.PadString(GetMessageLine(recipient.Type), pad * 2);
                     Console.WriteLine();
                     tool.RowDivider("-", (pad * cols) + pad);
                 }
             }
 
-            Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine();
@@ -164,18 +161,27 @@ namespace _02_Komodo_Email_Program
             {
                 case 1:
                     return "Current";
-                    break;
                 case 2:
                     return "Past";
-                    break;
                 case 3:
                     return "Potential";
-                    break;
                 default:
                     return "N/A";
-                    break;
             }
         }
+
+
+        public string GetSubjectLine(int type)
+        {
+            return _message[type -1].Subject;
+        }
+
+
+        public string GetMessageLine(int type)
+        {
+            return _message[type -1].Body;
+        }
+
 
 
         public void AddRecipient()
@@ -186,7 +192,7 @@ namespace _02_Komodo_Email_Program
             string email = tool.GetStringResponse("Please enter an email address:");
             string message = "Message here...";
 
-            Recipient newRecipient = new Recipient(first, last, type, email, message);
+            Recipient newRecipient = new Recipient(first, last, type, email);
 
             _repo.Add(newRecipient);
 
@@ -221,14 +227,14 @@ namespace _02_Komodo_Email_Program
             Menu();
         }
 
-       
+
 
         public void SeedRecipients()
         {
-            Recipient newrecipient1 = new Recipient("Dave", "Sprinkle", 1, "dave@somewhere.com", "Some message");
-            Recipient newrecipient2 = new Recipient("Tom", "Sprinkle", 2, "dave@somewhere.com", "Some message");
-            Recipient newrecipient3 = new Recipient("Abraham", "Sprinkle", 3, "dave@somewhere.com", "Some message");
-            Recipient newrecipient4 = new Recipient("Matt", "Sprinkle", 1, "dave@somewhere.com", "Some message");
+            Recipient newrecipient1 = new Recipient("Dave", "Sprinkle", 1, "dave@somewhere.com");
+            Recipient newrecipient2 = new Recipient("Tom", "Sprinkle", 2, "dave@somewhere.com");
+            Recipient newrecipient3 = new Recipient("Abraham", "Sprinkle", 3, "dave@somewhere.com");
+            Recipient newrecipient4 = new Recipient("Matt", "Sprinkle", 1, "dave@somewhere.com");
 
             _repo.Add(newrecipient1);
             _repo.Add(newrecipient2);
@@ -237,7 +243,7 @@ namespace _02_Komodo_Email_Program
         }
 
 
-        public void SetMessaging()
+        public void SeedMessaging()
         {
             Message newmessage1 = new Message("Thank you for your business!", "Thank you for your work with us.We appreciate your loyalty.Here's a coupon.");
             Message newmessage2 = new Message("We've missed you!", "It's been a long time since we've heard from you, we want you back.");

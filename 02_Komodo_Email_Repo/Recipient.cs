@@ -11,18 +11,18 @@ namespace _02_Komodo_Email_Repo
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public int Type { get; set; }
-        public string Email { get; set; }
-        public string Message { get; set; }
+        public string EmailAddress { get; set; }
+
 
         public Recipient() { }
 
-        public Recipient(string firstname, string lastname, int type, string email, string message)
+
+        public Recipient(string firstname, string lastname, int type, string emailaddress)
         {
             FirstName = firstname;
             LastName = lastname;
             Type = type;
-            Email = email;
-            Message = message;
+            EmailAddress = emailaddress;
         }
     }
 }
