@@ -32,7 +32,7 @@ namespace _00_Helpful_Methods
             if (bar.Length % 2 == 0) { textBumper = string.Concat(Enumerable.Repeat(filler, bar.Length - message.Length / 2)); }
             else { textBumper = string.Concat(Enumerable.Repeat(filler, ((bar.Length - message.Length) / 2) - 1)); }
 
-            newMessage = textBumper + message;
+            newMessage = textBumper + message.ToUpper();
             textBumper = string.Concat(Enumerable.Repeat(filler, bar.Length - newMessage.Length));
 
             newMessage = newMessage + textBumper;
@@ -230,7 +230,7 @@ namespace _00_Helpful_Methods
         {
             if (content.Length > maxwide-3)
             {
-                return content.Substring(0, maxwide - 3) + "...";
+                return content.Substring(0, maxwide - 5) + "...";
             }
             else { return content; }
 
